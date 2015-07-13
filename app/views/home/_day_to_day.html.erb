@@ -3,17 +3,17 @@
     <div class="large-12 columns">
       <div class="row">
         <div class="large-3 columns">
-          <span class="big-number">02.</span>
+          <span class="big-number">&mdash; Chapter 1</span>
         </div>
 
         <div class="large-9 columns">
-          <h2>Just a normal day<br>at the office</h2>
+          <h2>A regular day<br>at ChallengePost</h2>
 
-          <div class="event">
+          <div class="event first">
             <time>10:30am</time>
 
             <p>
-              We start at 10:30am. It's pretty good, ain't it?
+              Yea, ChallengePost is heavy-sleeper friendly.
             </p>
 
             <p>
@@ -31,26 +31,61 @@
       <%= render "home/trello_board" %>
 
       <div class="row">
-        <div class="large-3 columns">
+<!--         <div class="large-3 columns">
 
-        </div>
+        </div> -->
 
-        <div class="large-9 columns">
+        <div class="large-9 columns large-push-3">
           <div class="event">
             <time>1:00pm</time>
 
             <p>
               <%= image_tag "chelsea.jpg", class: "right large-4 polaroid" %>
 
-              Hungry? Me too. Let's head out to Chelsea Market. Or the Gansevoort Market. Or... You really can't go wrong on the Meatpacking District.
+              Hungry? Me too. Let's head out to Chelsea Market. Or the Gansevoort Market... Really, you can't go wrong in the Meatpacking District.
               <br>
               <small>ps: except the Sugar Factory. Don't go. Just don't.</small>
             </p>
           </div>
 
+          <div class="event">
+            <time>2:00pm</time>
+
+            <p>
+              Get some good work done, on your own, or pair-programming.
+            </p>
+
+            <p>
+              One of the most exciting feature we're building right now is our hacker feed.
+              <br>
+              It's an ambitious feature, and we need your help to build it.
+            </p>
+          </div>
+        </div>
+
+        <div class="large-12 columns">
+          <figure>
+            <%= image_tag "http://i.imgur.com/jtjOk1v.png", class: "img-border" %>
+          </figure>
         </div>
       </div>
 
+
+      <div class="row">
+
+        <div class="large-9 columns large-push-3">
+          <div class="event">
+            <time>3:00</time>
+
+            <p>
+              Chocolate-covered almonds break!!
+            </p>
+
+            <%= image_tag "almonds.png", style: "margin-left: -1.5em;" %>
+          </div>
+
+        </div>
+      </div>
     </div>
   </div>
 </section>
