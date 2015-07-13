@@ -15,11 +15,10 @@
             <p>
               We start at 10:30am. It's pretty good, ain't it?
             </p>
+
             <p>
-              Nobody will get mad if you get in earlier though, but 10:30am is stand up time, so you gotta be there!
-            </p>
-            <p>
-              Stand up is where we talk about what we're working on, ask for help, listen to the Product Team's updates etc.
+              We start with stand-up.
+              Stand-up is where we talk about what we're working on, ask for help, listen to the Product Team's updates etc.
             </p>
             <p>
               We use Trello:
@@ -29,53 +28,7 @@
         </div>
       </div>
 
-      <div class="row trello-board">
-        <div class="large-3 columns">
-          <div class="trello-list">
-            <h4>Ready [5]</h4>
-            <div class="trello-card clearfix">
-              <div class="tag"></div>
-
-              <p>[XL] Take over the word</p>
-
-              <div class="badges"></div>
-              <div class="members">
-                <%= image_tag "http://trello-avatars.s3.amazonaws.com/b70ec70d0d95af65b405104a4fec8666/30.png" %>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="large-3 columns">
-          <div class="trello-list">
-            <h4>In Progress [5]</h4>
-            <div class="trello-card">
-              <div class="tag"></div>
-
-              <p>Take over the world</p>
-            </div>
-          </div>
-        </div>
-        <div class="large-3 columns">
-          <div class="trello-list">
-            <h4>Review [3]</h4>
-            <div class="trello-card">
-              <div class="tag"></div>
-
-              <p>Take over the word</p>
-            </div>
-          </div>
-        </div>
-        <div class="large-3 columns">
-          <div class="trello-list">
-            <h4>Completed</h4>
-            <div class="trello-card">
-              <div class="tag"></div>
-
-              <p>Take over the word</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <%= render "home/trello_board" %>
 
       <div class="row">
         <div class="large-3 columns">
@@ -87,6 +40,8 @@
             <time>1:00pm</time>
 
             <p>
+              <%= image_tag "chelsea.jpg", class: "right large-4 polaroid" %>
+
               Hungry? Me too. Let's head out to Chelsea Market. Or the Gansevoort Market. Or... You really can't go wrong on the Meatpacking District.
               <br>
               <small>ps: except the Sugar Factory. Don't go. Just don't.</small>
