@@ -30,6 +30,7 @@
     margin-bottom: $paragraph-margin-bottom
     box-shadow: 3px 3px 0 rgba($green, 0.5)
     position: relative
+    @include transition(all 0.3s)
 
     &:before, &:after
       content: ""
@@ -51,6 +52,18 @@
       left: -19px
       background: $green
       margin-top: -4px
+
+  $darker-green: darken($green, 5%)
+  &:hover
+    time
+      background: $darker-green
+      box-shadow: 3px 3px 0 rgba($darker-green, 0.5)
+
+      &:after
+        background: $darker-green
+
+      &:before
+        border-right-color: $darker-green
 
 .event-border
   border-left: 1px solid $green
