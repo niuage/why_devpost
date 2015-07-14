@@ -19,21 +19,36 @@ figcaption
   border-top: 4px solid $yellow
 
 .big-number
-  font-size: 2.5em
+  font-size: 3.5em
   color: #e0e0e0
+  font-weight: bold
   display: inline-block
-  margin-top: 18px
+  // margin-top: 28px
+  float: right
 
 .polaroid
   border: 10px solid white
   border-width: 15px 15px 40px
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1)
   @include transform(rotate(6deg))
+  @extend .shadow
 
 .img-border
   border: 1px solid #ddd
-  border-radius: 3px
+  // border-radius: 3px
 
 .photo-grid
   img
     margin-bottom: $column-gutter
+
+.shadow
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1)
+
+.list
+  p
+    position: relative
+
+  span
+    position: absolute
+    right: 100%
+    padding-right: $column-gutter
+    color: #bbb
