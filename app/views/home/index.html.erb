@@ -33,24 +33,24 @@
 
 <script type="text/javascript">
 $(function() {
-  $grid = $("#grid");
-  timeoutId = 0
+  // $grid = $("#grid");
+  // timeoutId = 0
 
-  var hideGridAfterDelay = function() {
-    if (timeoutId) { clearTimeout(timeoutId) }
+  // var hideGridAfterDelay = function() {
+  //   if (timeoutId) { clearTimeout(timeoutId) }
 
-    timeoutId = setTimeout(function() {
-      $grid.addClass('faded')
-    }, 500);
-  };
+  //   timeoutId = setTimeout(function() {
+  //     $grid.addClass('faded')
+  //   }, 500);
+  // };
 
-  var showGrid = function() {
-    $grid.removeClass('faded')
-  }
+  // var showGrid = function() {
+  //   $grid.removeClass('faded')
+  // }
 
-  $(window).on("scroll", function() {
-    showGrid();
-    hideGridAfterDelay();
-  })
+  // $(window).on("scroll", function() {
+  //   showGrid();
+  //   hideGridAfterDelay();
+  // })
 })
 </script>
