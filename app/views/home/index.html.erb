@@ -29,3 +29,28 @@
 <%= render "home/the_office" %>
 <%= render "home/positions" %>
 
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<script type="text/javascript">
+$(function() {
+  $grid = $("#grid");
+  timeoutId = 0
+
+  var hideGridAfterDelay = function() {
+    if (timeoutId) { clearTimeout(timeoutId) }
+
+    timeoutId = setTimeout(function() {
+      $grid.addClass('faded')
+    }, 500);
+  };
+
+  var showGrid = function() {
+    $grid.removeClass('faded')
+  }
+
+  $(window).on("scroll", function() {
+    showGrid();
+    hideGridAfterDelay();
+  })
+})
+</script>

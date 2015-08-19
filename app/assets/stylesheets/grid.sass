@@ -1,4 +1,4 @@
-$grid-border-color: #e6e6e6
+$grid-border-color: #e4e4e4
 
 #grid
   position: fixed
@@ -13,10 +13,22 @@ $grid-border-color: #e6e6e6
 
   .columns
     height: 100%
+    @include transition(all 0.8s)
+
     border-left: 1px solid $grid-border-color
 
     &:last-child
       border-right: 1px solid $grid-border-color
+
+  &.faded
+    .columns
+      border-color: $body-bg
+
+      &:last-child
+        border-color: $body-bg
+
+      &:nth-child(2)
+        border-color: $grid-border-color
 
 #page
   position: absolute
