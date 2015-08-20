@@ -103,7 +103,7 @@ $font-weight-bold: bold;
 // $vapor       : #F6F6F6;
 // $white-smoke : #F5F5F5;
 // $silver      : #EFEFEF;
-// $smoke       : #EEEEEE;
+$smoke       : #EEEEEE;
 // $gainsboro   : #DDDDDD;
 // $iron        : #CCCCCC;
 // $base        : #AAAAAA;
@@ -118,6 +118,7 @@ $font-weight-bold: bold;
 // $black       : #000000;
 
 $grey-3: #999;
+$grey-5: #666;
 
 // We use these as default colors throughout
 $primary-color: #0f6ff4;
@@ -1397,7 +1398,7 @@ $topbar-height: rem-calc(60);
 
 // Set the link colors and styles for top-level nav
 $topbar-link-color: $grey-3;
-// $topbar-link-color-hover: $white;
+$topbar-link-color-hover: $grey-5;
 // $topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
 $topbar-link-weight: $font-weight-bold;
