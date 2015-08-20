@@ -4,12 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "Working at Devpost" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Why I love working at Devpost - and why you will too!" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+
+    <meta name="description" content="We strive to be the place where hackers come together and share what they're building to get recognition, to learn and get inspired.">
+
+    <meta property="og:type" content="devpost:website">
+    <meta property="og:image" content="<%= image_url("desk.png") %>">
+    <meta property="og:title" content="Why I love working at Devpost - and why you will too!">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Devposthacks">
+    <meta name="twitter:title" content="Why I love working at Devpost - and why you will too!">
+    <meta name="twitter:image:src" content="<%= image_url("desk.png") %>">
+    <meta name="twitter:creator" content="@Devposthacks">
   </head>
 
   <body>
