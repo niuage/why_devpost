@@ -9,3 +9,27 @@
 
   a
     color: $yellow
+
+  .me
+    display: none
+
+    @media #{$medium-up}
+      display: inline
+
+  .inner-bubble
+    position: relative
+
+    &:before
+      display: none
+
+    @media #{$medium-up}
+      &:before
+        display: block
+        content: ""
+        position: absolute
+        top: -5em
+        left: 18px
+        border: 12px solid transparent
+        border-top-color: $body-bg
+        height: 0
+        width: 0
